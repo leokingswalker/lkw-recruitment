@@ -45,6 +45,28 @@ describe('DancersDataService', () => {
       expect(service.getAllDancers()).toEqual([dancer2]);
       service.deleteDancerById(2);
       expect(service.getAllDancers()).toEqual([]);
+    })); 
+
+    it('should not removing anything if todo with corresponding id is not found', inject([DancersDataService], (service: DancersDataService) => {
+      let dancer1 = new Dancer({ id: 4}),
+          dancer2 = new Dancer({id: 2});
+      
+      service.addDancer(dancer1);
+      service.addDancer(dancer2);
+      expect(service.getAllDancers()).toEqual([dancer1, dancer2]);
+      service.deleteDancerById(3);
+      expect(service.getAllDancers()).toEqual([dancer1, dancer2]);
     }));
-  })
+  });
+
+  describe('#updateDancerById(id)', () => {
+    it('should update dancer with the corresponding id', inject([DancersDataService], (service: DancersDataService) => {
+      let dancer = new Dancer({id: 1, firstName: "Maxime"});
+      service.addDancer(dancer);
+      let updatedDancer = service.updateDancerById(1, {
+        firstName: 'new title'
+      });
+      expect(updatedDancer.firstName).toEqual('new title');
+    }));
+  });
 });
