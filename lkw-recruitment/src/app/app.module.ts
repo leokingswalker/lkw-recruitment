@@ -14,8 +14,6 @@ import { DancersDataService } from './services/dancers-data.service';
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent,
-     DancersDataService
-  ]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

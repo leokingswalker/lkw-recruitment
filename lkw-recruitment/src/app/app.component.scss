@@ -1,0 +1,43 @@
+@import '../assets/vars';
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.lkw-recruitment-app {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    .lkw-logo {
+        @media ($small) {
+            position: relative;
+            width: 384px;
+            height: 261px;
+            transition: 1s;
+        }
+    }
+
+    .form {
+        border-radius: 5px;
+        border: 1px solid rgba(0,0,0,0.11);
+        padding: 2em;
+        transition: 1s;
+        border-left: 4px solid black;
+        
+        label {
+            color: rgba(0, 0, 0, 0.25)
+        }
+    }
+    .valid {
+        border-left: 4px solid rgba(0, 249, 100, 0.68);
+    }
+}
