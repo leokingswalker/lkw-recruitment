@@ -9,9 +9,23 @@ export class DancersDataService {
 
    }
 
-  addTodo(dancer: Dancer): DancersDataService {
+  addDancer(dancer: Dancer): DancersDataService {
     this.dancers.push(dancer);
     return this;
+  }
+
+  deleteDancerById(id: number): DancersDataService {
+    this.dancers = this.dancers.filter(dancer => dancer.id !== id);
+    return this;
+  }
+
+  updateDancerById(id: number, values: Object = {}): Dancer  {
+    let dancer = this.getDancerById(id);
+    if(!dancer) {
+      return null;
+    }
+    Object.assign(dancer, values);
+    return dancer;
   }
 
   getAllDancers(): Dancer[] {
