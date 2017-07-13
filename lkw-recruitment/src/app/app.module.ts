@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
+import { DancersDataService } from './services/dancers-data.service';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,8 @@ import { NavComponent } from './components/nav/nav.component';
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,
+     DancersDataService
+  ]
 })
 export class AppModule { }
