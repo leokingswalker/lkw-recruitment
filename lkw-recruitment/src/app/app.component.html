@@ -1,8 +1,8 @@
 <section class="lkw-recruitment-app">
   <img src="assets/LKW-white copy.png" alt="" class="lkw-logo">
-  <form class="form card valid">
+  <form (ngSubmit)="onSubmit()" class="form card">
     <label for="passwordName">Password: </label> <br><br>
-    <input type="password" class="lkw-input" name="passwordName" value="" placeholder="Ton blaze.">
-    <button type="submit" class="button enter">Entrez</button>
+    <input type="text" class="lkw-input" name="passwordName" [value]="lkwAccess" placeholder="Ton blaze.">
+    <button type="submit" class="button enter"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
   </form>
 </section>
