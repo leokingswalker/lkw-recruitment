@@ -8,6 +8,15 @@
 body {
     font-family: "sullivan";
     font-size: 1.5em;
+    margin: 0;
+    overflow: hidden;
+}
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
 }
 
 .card {
