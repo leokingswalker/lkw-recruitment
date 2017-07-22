@@ -1,10 +1,1 @@
-<section class="lkw-recruitment-app">
-  <img src="assets/LKW-white copy.png" alt="" class="lkw-logo">
-  <form (ngSubmit)="onSubmit()" class="form card" [ngClass]="{'valid': accept, 'unvalid': unvalid}">
-    <label for="">userName: </label> <br><br>
-    <input type="text" class="lkw-input" name="userName" [value]="lkwUser" [(ngModel)]="lkwUser" placeholder="Ton blaze."> <br> <br>
-    <label for="passwordName">Password: </label> <br><br>
-    <input type="text" class="lkw-input" name="passwordName" [value]="lkwAccess" [(ngModel)]="lkwAccess" placeholder="Ton mdp.">
-    <button type="submit" class="button-hover" [ngClass]="{'enabled': buttonEnabled, 'button-unvalid': unvalid}"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
-  </form>
-</section>
+<router-outlet></router-outlet>
