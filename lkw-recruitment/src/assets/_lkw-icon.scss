@@ -1,0 +1,64 @@
+@import "lkw-icon-vars";
+
+@font-face {
+  font-family: 'lkw-icon';
+  src:  url('#{$icomoon-font-path}/lkw-icon.eot?ktypqj');
+  src:  url('#{$icomoon-font-path}/lkw-icon.eot?ktypqj#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/lkw-icon.ttf?ktypqj') format('truetype'),
+    url('#{$icomoon-font-path}/lkw-icon.woff?ktypqj') format('woff'),
+    url('#{$icomoon-font-path}/lkw-icon.svg?ktypqj#lkw-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="lkw"], [class*=" lkw"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'lkw-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.lkwspeech-bubble {
+  &:before {
+    content: $lkwspeech-bubble;
+  }
+}
+.lkwsuccess {
+  &:before {
+    content: $lkwsuccess;
+  }
+}
+.lkwuser {
+  &:before {
+    content: $lkwuser;
+  }
+}
+.lkwsearch {
+  &:before {
+    content: $lkwsearch;
+  }
+}
+.lkwmenu {
+  &:before {
+    content: $lkwmenu;
+  }
+}
+.lkwmore {
+  &:before {
+    content: $lkwmore;
+  }
+}
+.lkwhome {
+  &:before {
+    content: $lkwhome;
+  }
+}
+

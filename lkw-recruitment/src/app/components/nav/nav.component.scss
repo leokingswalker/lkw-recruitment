@@ -1,3 +1,4 @@
+@import '../../../assets/vars';
 .lkw-nav {
     position: fixed;
     bottom: 0;
@@ -8,29 +9,39 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background: black;
+    background: $color-basic-blue;
     color: white;
     height: 2em;
-    
+    -webkit-box-shadow: 10px -4px 103px -16px rgba(0, 0, 0, 0.74);
+    -moz-box-shadow: 10px -4px 103px -16px rgba(0, 0, 0, 0.74);
+    box-shadow:10px -4px 103px -16px rgba(0, 0, 0, 0.74);
+
     .nav-item {
+        height: 100%;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &.active {
+            font-size: 1.3em;
+            transition: .7em;
+        }
         button {
             color: white;
             font-size: .8em;
             &.options {
                 &:after {
-                    bottom: 100%;
                     left: 15%;
                 }
             }
             &.home {
                 &:after {
-                    bottom: 100%;
                     left: 50%;
                 }
             }
             &.user {
                 &:after {
-                    bottom: 100%;
                     left: 85%;
                 }                
             }
@@ -39,14 +50,15 @@
                 position: absolute;
                 width: 5px;
                 height: 5px;
-                background: rgba(255, 255, 255, .5);
+                top: 100%;
+                background: rgba(255, 255, 255, .3);
                 opacity: 0;
-                border-radius: 100%;
+                border-radius: 100px;
                 transform: scale(1, 1) translate(-50%);
                 transform-origin: 50% 50%;
             }
             &:focus:not(:active)::after {
-                animation: ripple 1s ease-out;
+                animation: ripple .7s ease-out;
             }
         }
     }
