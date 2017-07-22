@@ -1,11 +1,11 @@
 <nav class="lkw-nav">
-    <div class="nav-item" [ngClass]="{'active': (menuActive === 1)}">
+    <div class="nav-item" [ngClass]="{'active': (menuActive === 1)}" (click)="changeLayout('menu')">
         <button type="button" class="options"><span class="lkwmore"></span></button>
     </div>
-    <div class="nav-item" [ngClass]="{'active': (menuActive === 2)}">
+    <div class="nav-item" [ngClass]="{'active': (menuActive === 2)}" (click)="changeLayout('home')">
         <button type="" class="home"><span class="lkwhome"></span></button>
     </div>
-    <div class="nav-item" [ngClass]="{'active': (menuActive === 3)}">
+    <div class="nav-item" [ngClass]="{'active': (menuActive === 3)}" (click)="changeLayout('user')">
         <button type="" class="users"><span class="lkwuser"></span></button>
     </div>
-</nav>    
+</nav>

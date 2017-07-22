@@ -14,4 +14,20 @@ export class NavComponent implements OnInit {
   
   }
 
+  changeLayout(view) {
+    switch (view) {
+      case "home":
+        this.menuActive = 2;
+        break;
+        case "user":
+        this.menuActive = 3;
+        break;
+        case "menu":
+        this.menuActive = 1;
+        break;
+    
+      default:
+        break;
+    }
+  }
 }

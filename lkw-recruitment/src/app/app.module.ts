@@ -24,7 +24,7 @@ import { LoginComponent } from './components/layouts/login/login.component';
     RouterModule.forRoot([
       {
         path: 'dancers',
-        component: NavComponent
+        component: AppComponent
       },
       {
         path: '',
