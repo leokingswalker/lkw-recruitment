@@ -9,12 +9,14 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { DancersDataService } from './services/dancers-data.service';
 import { LoginComponent } from './components/layouts/login/login.component';
+import { HomedancersComponent } from './components/layouts/homedancers/homedancers.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    LoginComponent
+    LoginComponent,
+    HomedancersComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,7 @@ import { LoginComponent } from './components/layouts/login/login.component';
     RouterModule.forRoot([
       {
         path: 'dancers',
-        component: AppComponent
+        component: HomedancersComponent
       },
       {
         path: '',
