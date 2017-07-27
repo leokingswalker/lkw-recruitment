@@ -1,4 +1,5 @@
 @import '../../../assets/vars';
+
 .lkw-nav {
     position: fixed;
     bottom: 0;
@@ -26,10 +27,16 @@
         &.active {
             font-size: 1.3em;
             transition: .6s;
+            & > button {
+                color: rgba(0, 238, 249, 0.71);
+            }
         }
         button {
             color: white;
             font-size: .8em;
+            border-radius: 20px;
+            border: 1px solid transparent;
+            background: transparent;
             &.options {
                 &:after {
                     left: 15%;
