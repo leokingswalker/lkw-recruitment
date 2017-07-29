@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./homedancers.component.scss']
 })
 export class HomedancersComponent implements OnInit {
+  esilv: boolean = true;
+  iim: boolean = false;
+  emlv: boolean = false;
 
   constructor() { }
 
