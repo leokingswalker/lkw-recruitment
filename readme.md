@@ -21,3 +21,4 @@ In order to make this app wrok: download the repo and simply launch
 ng serve
 ```
 temp : https://www.behance.net/gallery/37105883/Arco-Mobile-UI-Kit
+https://www.behance.net/gallery/37148547/UI-Development
