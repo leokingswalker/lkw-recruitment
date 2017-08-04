@@ -9,6 +9,7 @@
 .homedancers-container {
     width: 100%;
     height: auto;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,7 +31,7 @@
         &:hover {
             height: 85px;
             width: 86%;
-            transition: .5s all ease-in-out;
+            transition: .2s all ease-in-out;
         }
         &.esilv {
             border-left: 2px solid #E60347;

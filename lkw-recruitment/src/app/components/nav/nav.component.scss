@@ -2,20 +2,19 @@
 
 .lkw-nav {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
+    left: 10px;
+    top: 10px;
     display: flex;
+    border-radius: 100em;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     background: $color-basic-blue;
     color: white;
-    height: 2em;
-    -webkit-box-shadow: 10px -4px 103px -16px rgba(0, 0, 0, 0.74);
-    -moz-box-shadow: 10px -4px 103px -16px rgba(0, 0, 0, 0.74);
-    box-shadow:10px -4px 103px -16px rgba(0, 0, 0, 0.74);
+    padding: .2em;
+    -webkit-box-shadow: 5px 3px 31px -6px rgba(0, 0, 0, 0.74);
+    -moz-box-shadow: 5px 3px 31px -6px rgba(0, 0, 0, 0.74);
+    box-shadow:5px 3px 31px -6px rgba(0, 0, 0, 0.74);
 
     .nav-item {
         height: 100%;
@@ -26,13 +25,13 @@
         align-items: center;
         &.active {
             font-size: 1.3em;
-            transition: .6s;
+            transition: .3s;
             & > button {
-                color: rgba(0, 238, 249, 0.71);
+                color: white;
             }
         }
         button {
-            color: white;
+            color: $color-non-active-actions-button;
             font-size: .8em;
             border-radius: 20px;
             border: 1px solid transparent;
@@ -65,7 +64,7 @@
                 transform-origin: 50% 50%;
             }
             &:focus:not(:active)::after {
-                animation: ripple .7s ease-out;
+                animation: ripple .3s ease-out;
             }
         }
     }
