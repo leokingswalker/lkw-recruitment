@@ -2,16 +2,16 @@
 
 @font-face {
   font-family: 'lkw-icon';
-  src:  url('#{$icomoon-font-path}/lkw-icon.eot?ktypqj');
-  src:  url('#{$icomoon-font-path}/lkw-icon.eot?ktypqj#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/lkw-icon.ttf?ktypqj') format('truetype'),
-    url('#{$icomoon-font-path}/lkw-icon.woff?ktypqj') format('woff'),
-    url('#{$icomoon-font-path}/lkw-icon.svg?ktypqj#lkw-icon') format('svg');
+  src:  url('#{$icomoon-font-path}/lkw-icon.eot?rprgui');
+  src:  url('#{$icomoon-font-path}/lkw-icon.eot?rprgui#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/lkw-icon.ttf?rprgui') format('truetype'),
+    url('#{$icomoon-font-path}/lkw-icon.woff?rprgui') format('woff'),
+    url('#{$icomoon-font-path}/lkw-icon.svg?rprgui#lkw-icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="lkw"], [class*=" lkw"] {
+[class^="lkwicon"], [class*=" lkwicon"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'lkw-icon' !important;
   speak: none;
@@ -26,39 +26,264 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.lkwspeech-bubble {
+.lkwiconsearch {
   &:before {
-    content: $lkwspeech-bubble;
+    content: $lkwiconsearch;
   }
 }
-.lkwsuccess {
+.lkwiconspeech-bubble {
   &:before {
-    content: $lkwsuccess;
+    content: $lkwiconspeech-bubble;
   }
 }
-.lkwuser {
+.lkwiconadd-button {
   &:before {
-    content: $lkwuser;
+    content: $lkwiconadd-button;
   }
 }
-.lkwsearch {
+.lkwiconapps {
   &:before {
-    content: $lkwsearch;
+    content: $lkwiconapps;
   }
 }
-.lkwmenu {
+.lkwiconat {
   &:before {
-    content: $lkwmenu;
+    content: $lkwiconat;
   }
 }
-.lkwmore {
+.lkwiconbookmark {
   &:before {
-    content: $lkwmore;
+    content: $lkwiconbookmark;
   }
 }
-.lkwhome {
+.lkwiconbrowser-visualization {
   &:before {
-    content: $lkwhome;
+    content: $lkwiconbrowser-visualization;
+  }
+}
+.lkwiconbrowser {
+  &:before {
+    content: $lkwiconbrowser;
+  }
+}
+.lkwiconcheck-square {
+  &:before {
+    content: $lkwiconcheck-square;
+  }
+}
+.lkwiconchrome-logo {
+  &:before {
+    content: $lkwiconchrome-logo;
+  }
+}
+.lkwiconclose {
+  &:before {
+    content: $lkwiconclose;
+  }
+}
+.lkwiconcompass-1 {
+  &:before {
+    content: $lkwiconcompass-1;
+  }
+}
+.lkwiconcompass-2 {
+  &:before {
+    content: $lkwiconcompass-2;
+  }
+}
+.lkwiconcompass-3 {
+  &:before {
+    content: $lkwiconcompass-3;
+  }
+}
+.lkwiconcompass {
+  &:before {
+    content: $lkwiconcompass;
+  }
+}
+.lkwiconconnections {
+  &:before {
+    content: $lkwiconconnections;
+  }
+}
+.lkwicondiagonal-enlarge {
+  &:before {
+    content: $lkwicondiagonal-enlarge;
+  }
+}
+.lkwicondownload {
+  &:before {
+    content: $lkwicondownload;
+  }
+}
+.lkwicondownloading-from-smartphone {
+  &:before {
+    content: $lkwicondownloading-from-smartphone;
+  }
+}
+.lkwiconfavorites-button {
+  &:before {
+    content: $lkwiconfavorites-button;
+  }
+}
+.lkwiconfolders {
+  &:before {
+    content: $lkwiconfolders;
+  }
+}
+.lkwiconglasses {
+  &:before {
+    content: $lkwiconglasses;
+  }
+}
+.lkwiconhigh-volume {
+  &:before {
+    content: $lkwiconhigh-volume;
+  }
+}
+.lkwiconhistory-button {
+  &:before {
+    content: $lkwiconhistory-button;
+  }
+}
+.lkwiconhome {
+  &:before {
+    content: $lkwiconhome;
+  }
+}
+.lkwiconmenu-button {
+  &:before {
+    content: $lkwiconmenu-button;
+  }
+}
+.lkwiconmicrophone {
+  &:before {
+    content: $lkwiconmicrophone;
+  }
+}
+.lkwiconmouse {
+  &:before {
+    content: $lkwiconmouse;
+  }
+}
+.lkwiconmulti-tab {
+  &:before {
+    content: $lkwiconmulti-tab;
+  }
+}
+.lkwiconmute {
+  &:before {
+    content: $lkwiconmute;
+  }
+}
+.lkwiconnew-file {
+  &:before {
+    content: $lkwiconnew-file;
+  }
+}
+.lkwiconnext-page {
+  &:before {
+    content: $lkwiconnext-page;
+  }
+}
+.lkwiconnote {
+  &:before {
+    content: $lkwiconnote;
+  }
+}
+.lkwiconnotification {
+  &:before {
+    content: $lkwiconnotification;
+  }
+}
+.lkwiconopen-book {
+  &:before {
+    content: $lkwiconopen-book;
+  }
+}
+.lkwiconorder {
+  &:before {
+    content: $lkwiconorder;
+  }
+}
+.lkwiconpadlock {
+  &:before {
+    content: $lkwiconpadlock;
+  }
+}
+.lkwiconpicture {
+  &:before {
+    content: $lkwiconpicture;
+  }
+}
+.lkwiconpin {
+  &:before {
+    content: $lkwiconpin;
+  }
+}
+.lkwiconplay-button-1 {
+  &:before {
+    content: $lkwiconplay-button-1;
+  }
+}
+.lkwiconplay-button {
+  &:before {
+    content: $lkwiconplay-button;
+  }
+}
+.lkwiconrefresh-button {
+  &:before {
+    content: $lkwiconrefresh-button;
+  }
+}
+.lkwiconretweet {
+  &:before {
+    content: $lkwiconretweet;
+  }
+}
+.lkwiconsettings {
+  &:before {
+    content: $lkwiconsettings;
+  }
+}
+.lkwiconshop {
+  &:before {
+    content: $lkwiconshop;
+  }
+}
+.lkwiconside-menu {
+  &:before {
+    content: $lkwiconside-menu;
+  }
+}
+.lkwiconspider-web {
+  &:before {
+    content: $lkwiconspider-web;
+  }
+}
+.lkwicontracker {
+  &:before {
+    content: $lkwicontracker;
+  }
+}
+.lkwiconturn-right {
+  &:before {
+    content: $lkwiconturn-right;
+  }
+}
+.lkwiconupload-arrow {
+  &:before {
+    content: $lkwiconupload-arrow;
+  }
+}
+.lkwiconupload-to-cloud {
+  &:before {
+    content: $lkwiconupload-to-cloud;
+  }
+}
+.lkwiconuser {
+  &:before {
+    content: $lkwiconuser;
   }
 }
 

@@ -13,6 +13,8 @@ import { LoginComponent } from './components/layouts/login/login.component';
 import { HomedancersComponent } from './components/layouts/homedancers/homedancers.component';
 import { DancersPageComponent } from './components/layouts/pages/dancers-page/dancers-page.component';
 import { FadeListDirective } from './directives/fade-list.directive';
+import { ShowsPageComponent } from './components/layouts/pages/shows-page/shows-page.component';
+import { CoursesPageComponent } from './components/layouts/pages/courses-page/courses-page.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { FadeListDirective } from './directives/fade-list.directive';
     LoginComponent,
     HomedancersComponent,
     DancersPageComponent,
-    FadeListDirective
+    FadeListDirective,
+    ShowsPageComponent,
+    CoursesPageComponent
   ],
   imports: [
     BrowserModule,
