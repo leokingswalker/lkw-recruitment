@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
 
   }
   
-  public checkIfValid() {
+  public checkIfValid(): void {
     if(this.lkwAccess == "lafinale4" && this.lkwUser != "") {
       this.unvalid = false;
       this.accept = true;
@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
     }
   }
 
-  public onSubmit() {
+  public onSubmit(): void {
     this.checkIfValid();
   }
 }
