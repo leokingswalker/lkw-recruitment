@@ -6,7 +6,7 @@ import { Directive } from '@angular/core';
 export class FadeListDirective {
 
   constructor() {
-    console.log("loaded");
+    
    }
 
 }
