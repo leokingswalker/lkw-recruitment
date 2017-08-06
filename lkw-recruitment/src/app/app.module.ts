@@ -11,6 +11,7 @@ import { DancersDataService } from './services/dancers-data.service';
 import { LoginComponent } from './components/layouts/login/login.component';
 import { HomedancersComponent } from './components/layouts/homedancers/homedancers.component';
 import { DancersPageComponent } from './components/layouts/pages/dancers-page/dancers-page.component';
+import { FadeListDirective } from './directives/fade-list.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DancersPageComponent } from './components/layouts/pages/dancers-page/da
     NavComponent,
     LoginComponent,
     HomedancersComponent,
-    DancersPageComponent
+    DancersPageComponent,
+    FadeListDirective
   ],
   imports: [
     BrowserModule,
