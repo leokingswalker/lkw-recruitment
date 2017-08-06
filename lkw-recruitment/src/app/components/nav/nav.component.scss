@@ -1,6 +1,23 @@
 @import '../../../assets/vars';
 
+@font-face {
+    font-family: "sullivan";
+    src: url('../../../assets/fonts/Geometos Rounded.ttf');
+}
+
+:host {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
 .lkw-nav {
+    animation: enterLeft;
+    animation-duration: 1s;
     position: fixed;
     left: 10px;
     top: 10px;
@@ -72,6 +89,36 @@
     }
 }
 
+.lkw-menu {
+    display: none;
+    &.open-menu {
+        display: block;
+    }
+    font-family: "sullivan" !important;
+    font-size: .7em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000%;
+    background: rgba(21, 35, 53, 0.69);
+    .menu-container {
+        background: rgba(21, 35, 53, 1);
+        height: auto;
+        width: 150%;
+        color: $color-non-active-actions-button;
+        padding-left: 3em;
+
+        .menu-element {
+            padding-top: 1em;
+            padding-bottom: 1em;
+            span {
+                font-size: 1.2em;
+            }
+        }
+     }
+}
+
 @keyframes ripple {
   0% {
     transform: scale(0, 0);
@@ -85,4 +132,10 @@
     opacity: 0;
     transform: scale(40, 40);
   }
+}
+
+@keyframes enterLeft {
+    0% {
+        transform: translate(-80px, 0);
+    }
 }

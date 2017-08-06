@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -12,7 +13,7 @@ export class LoginComponent implements OnInit {
   unvalid: boolean = false;
   buttonEnabled: boolean = false;
 
-  constructor() {
+  constructor(private router: Router) {
 
   }
 
@@ -25,6 +26,8 @@ export class LoginComponent implements OnInit {
       this.unvalid = false;
       this.accept = true;
       this.buttonEnabled = true;
+      setTimeout( () => this.router.navigate(['/dancers']), 1000 );
+      
     } else {
       this.buttonEnabled = false;
       this.unvalid = true;

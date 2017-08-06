@@ -1,5 +1,30 @@
 <nav class="lkw-nav">
-    <div class="nav-item" [ngClass]="{'active': (menuActive === 2)}" (click)="changeLayout('home')">
+    <div class="nav-item" [ngClass]="{'active': (menuActive === 2)}" (click)="toggleMenu = !toggleMenu;">
         <button type="" class="home"><span class="lkwhome"></span></button>
     </div>
 </nav>
+<!-- Menu to splash -->
+<section class="lkw-menu" [ngClass]="{'open-menu': toggleMenu}">
+    <div class="menu-container">
+        <div class="menu-element">
+            <span class="lkwmenu"></span>
+            <label for="">Home</label>
+        </div>
+        <div class="menu-element">
+            <span class="lkwmore"></span>
+            <label for="">More</label>
+        </div>
+        <div class="menu-element">
+            <span class="lkwhome"></span>
+            <label for="">Home</label>
+        </div>
+        <div class="menu-element">
+            <span class="lkwspeech-bubble"></span>
+            <label for="">Messages</label>
+        </div>
+        <div class="menu-element">
+            <span class="lkwuser"></span>
+            <label for="">User</label>
+        </div>
+    </div>
+</section>
