@@ -41,6 +41,14 @@ import { CoursesPageComponent } from './components/layouts/pages/courses-page/co
       {
         path: '',
         component: LoginComponent
+      },
+      {
+        path: 'courses',
+        component: CoursesPageComponent
+      },
+      {
+        path: 'shows',
+        component: ShowsPageComponent
       }
     ])
   ],
