@@ -16,7 +16,6 @@ describe('Dancer', () => {
     expect(dancer.lastName).toEqual('Gasnier');
     expect(dancer.age).toEqual(22);
     expect(dancer.danceStyles).toContain("Hip Hop");
-    expect(dancer.isNewMember).toEqual(false);
     expect(dancer.points).toEqual(4);
   });
 });
