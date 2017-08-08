@@ -1,3 +1,5 @@
+@import '../../../../assets/vars';
+
 :host {
     display: block;
     height: 100%;
@@ -34,13 +36,13 @@
             transition: .2s all ease-in-out;
         }
         &.esilv {
-            border-left: 2px solid #E60347;
+            border-left: 2px solid $color-esilv;
         }
         &.emlv {
-            border-left: 2px solid #0194B8;
+            border-left: 2px solid $color-emlv;
         }
         &.iim {
-            border-left: 2px solid #EF7E00;
+            border-left: 2px solid $color-iim;
         }
         .card-img {
             width: 90px;
