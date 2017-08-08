@@ -5,18 +5,26 @@
     height: 100%;
     width: 100%;
     overflow-y: scroll;
-    top: 30px;
+    top: 60px;
     position: relative;
 }
 
 .current-course-container {
     position: fixed;
-    border: 1px solid black;
-    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     .current-course {
+        width: 5em;
+        height: 5em;
+        font-size: 1.1em;
         border: 1px solid green;
-        color: blue;
+        border-radius: 100%;
         display: flex;
+        justify-content: space-around;
+        align-items: center;
         flex-direction: column;
         z-index: 1;
     }
@@ -24,7 +32,7 @@
 }
 
 .old-courses-container {
-    top: 50px;
+    top: 9em;
     position: relative;
     z-index: 2;
     background: white;
