@@ -15,6 +15,7 @@ import { DancersPageComponent } from './components/layouts/pages/dancers-page/da
 import { FadeListDirective } from './directives/fade-list.directive';
 import { ShowsPageComponent } from './components/layouts/pages/shows-page/shows-page.component';
 import { CoursesPageComponent } from './components/layouts/pages/courses-page/courses-page.component';
+import { CoursesComponent } from './components/layouts/courses/courses.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CoursesPageComponent } from './components/layouts/pages/courses-page/co
     DancersPageComponent,
     FadeListDirective,
     ShowsPageComponent,
-    CoursesPageComponent
+    CoursesPageComponent,
+    CoursesComponent
   ],
   imports: [
     BrowserModule,
